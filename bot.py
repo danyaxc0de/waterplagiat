@@ -1,9 +1,10 @@
 import telebot
+import os
 from telebot import types
 import sqlite3, threading, time, requests, random, re
 
 # === НАСТРОЙКИ ===
-TOKEN = "8541203372:AAFAO7rYMoE9ZVrPgcF4uZj4Yw7woLKNzMc"
+TOKEN = os.environ.get('BOT_TOKEN')
 ADMIN_ID = 8192413936
 
 bot = telebot.TeleBot(TOKEN)
